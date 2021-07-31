@@ -1,360 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<title>Valeo art</title>
 </head>
 <body>
 <header class="header">
-	<div class="container header-container">
-		<!-- If you need link for logo you can use this code
-		<a href="/" class="header-logo">
-			<span>
-				<img src="img/header/logo.png" alt="logo">
-			</span>
-			<span>
-				<img src="img/header/beta-tag.png" alt="beta-tag">
-			</span>
-		</a>
-		-->
-		<div class="header-logo">
-			<span>
-				<img src="img/header/logo.png" alt="logo">
-			</span>
-			<span>
-				<img src="img/header/beta-tag.png" alt="beta-tag">
-			</span>
-		</div>
-		<div class="header-nav">
-			<div class="header-burger">
-				<span></span>
+	<div class="container">
+		<div class="header__wrapper">
+			<div class="header__logo">
+				<h1>VALEO</h1>
 			</div>
-			<nav class="main-nav">
-				<ul>
-					<li><a href="#">Support</a></li>
-					<li><a href="#">Learn more</a></li>
+			<nav class="header__nav">
+				<ul class="header__nav-list">
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Performance</a></li>
+					<li><a href="#">Walls</a></li>
+					<li><a href="#">Video-art</a></li>
+					<li><a href="#">About</a>
+						<ul class="header__nav-sub">
+							<li><a href="">Category</a></li>
+							<li><a href="">Author</a></li>
+							<li><a href="">Archive</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Store</a></li>
 				</ul>
-				<div class="header-buttons">
-					<button class="header-login btn btn-primary btn--small">Log in</button>
-					<button class="btn btn-secondary btn--medium">Get started</button>
-				</div>
+				<ul class="header__nav-social">
+					<li><a href="#"><img src="./img/header/instagram.svg"></a></li>
+					<li><a href="#"><img src="./img/header/facebook.svg"></a></li>
+				</ul>
+				<button class="header__nav-btn">
+				</button>
 			</nav>
+			<button class="header__toggle-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
 		</div>
 	</div>
 </header>
 <section class="banner">
-	<div class="container">
-		<div class="banner-info">
-			<h1>The world’s <br>travel platform</h1>
-			<p>An extensive brand portfolio that includes some of the world’s <br> most trusted online travel brands.</p>
-			<button class="btn--large btn-primary btn">Get started</button>
-		</div>
+	<div class="banner__item">
+		<img src="img/slides/banner-2.jpg"/>
+	</div>
+	<div class="banner__item">
+		<img src="img/slides/banner-1.jpg"/>
 	</div>
 </section>
-<section class="slider">
-	<div class="container">
-		<div class="slider-items">
-			<div class="slider-item">
-				<img src="img/slick-items/logo-2.png">
-			</div>
-			<div class="slider-item">
-				<img src="img/slick-items/logo-3.png">
-			</div>
-			<div class="slider-item">
-				<img src="img/slick-items/logo-1.png">
-			</div>
-			<div class="slider-item">
-				<img src="img/slick-items/logo-5.png">
-			</div>
-			<div class="slider-item">
-				<img src="img/slick-items/logo-6.png">
-			</div>
-			<div class="slider-item">
-				<img src="img/slick-items/logo-7.png">
-			</div>
-			<div class="slider-item">
-				<img src="img/slick-items/logo-7.png">
-			</div>
-		</div>
-	</div>
-</section>
-<section class="advertise bg-dark">
-	<div class="container">
-		<h2>Why advertise on Expedia Group?</h2>
-		<div class="advertise-items">
-			<div class="advertise-item">
-				<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128"
-				     viewBox="0 0 128 128">
-					<g fill="none" fill-rule="evenodd">
-						<g stroke-width="2.374">
-							<g>
-								<g>
-									<g transform="translate(-221 -1190) translate(0 900) translate(80 290) translate(141)">
-										<circle cx="65" cy="49" r="35" stroke="#009"/>
-										<circle cx="65" cy="104" r="12" stroke="#009"/>
-										<g stroke="#FFC60B" transform="translate(49 34)">
-											<circle cx="16" cy="9" r="9"/>
-											<path d="M10.05 16.143C4.16 18.504 0 24.266 0 31"/>
-											<path d="M32.05 16.143C26.16 18.504 22 24.266 22 31"
-											      transform="matrix(-1 0 0 1 54.05 0)"/>
-										</g>
-										<circle cx="96" cy="104" r="9" stroke="#009"/>
-										<circle cx="34" cy="104" r="9" stroke="#009"/>
-										<path stroke="#009"
-										      d="M24.5 104L10.5 104M119 104L105 104M87 104L81 104M65 84L65 92M53 104L47 104"/>
-									</g>
-								</g>
-							</g>
-						</g>
-					</g>
-				</svg>
-				<h3>Unparalleled reach</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-					et dolore magna.</p>
-			</div>
-			<div class="advertise-item">
-				<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
-					<g fill="none" fill-rule="evenodd">
-						<g stroke-width="2.374">
-							<g>
-								<g>
-									<g transform="translate(-656 -1190) translate(0 900) translate(515 290) translate(141)">
-										<g stroke="#FFC60B" transform="translate(43 47)">
-											<circle cx="21" cy="11.5" r="11.5"/>
-											<path d="M13.5 20C5.88 23.02.5 30.389.5 39"/>
-											<path d="M41.5 20c-7.62 3.02-13 10.389-13 19"
-											      transform="matrix(-1 0 0 1 70 0)"/>
-										</g>
-										<g stroke="#009" transform="translate(90 19)">
-											<circle cx="14" cy="7.667" r="7.667"/>
-											<path d="M9 13.333C3.92 15.346.333 20.26.333 26"/>
-											<path d="M27.667 13.333C22.587 15.346 19 20.26 19 26"
-											      transform="matrix(-1 0 0 1 46.667 0)"/>
-										</g>
-										<g stroke="#009" transform="translate(10 19)">
-											<circle cx="14" cy="7.667" r="7.667"/>
-											<path d="M9 13.333C3.92 15.346.333 20.26.333 26"/>
-											<path d="M27.667 13.333C22.587 15.346 19 20.26 19 26"
-											      transform="matrix(-1 0 0 1 46.667 0)"/>
-										</g>
-										<path stroke="#009" d="M83 11H125V53H83zM3 11H45V53H3z"/>
-										<circle cx="64" cy="104" r="16" stroke="#FFC60B"/>
-										<path stroke="#FFC60B" d="M58 104L63 109 72 98"/>
-									</g>
-								</g>
-							</g>
-						</g>
-					</g>
-				</svg>
-				<h3>Active audience</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-					et dolore magna.</p>
-			</div>
-			<div class="advertise-item">
-				<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
-					<g fill="none" fill-rule="evenodd">
-						<g>
-							<g>
-								<g>
-									<g>
-										<path stroke="#009" stroke-width="2.374"
-										      d="M38 12L38 32 18 32M33.5 51.5L71.5 51.5M42 66.5L72 66.5M50 81.5L72 81.5"
-										      transform="translate(-1091 -1190) translate(0 900) translate(950 290) translate(141)"/>
-										<path fill="#FFC60B" fill-rule="nonzero"
-										      d="M92 38.834l1.025 1.755 7.59 13-2.05 1.197-5.379-9.215v13.513c0 2.72 1.038 5.332 2.893 7.309l.236.244 13.048 13.048c2.361 2.36 3.724 5.532 3.819 8.86l.005.37V91h-2.374v-2.084c0-2.72-1.037-5.332-2.892-7.309l-.236-.244-13.048-13.048c-2.361-2.36-3.724-5.532-3.819-8.86l-.005-.37V45.572l-5.379 9.213-2.05-1.197 7.591-13L92 38.834z"
-										      transform="translate(-1091 -1190) translate(0 900) translate(950 290) translate(141)"/>
-										<path fill="#FFC60B" fill-rule="nonzero"
-										      d="M92 38.834l1.025 1.755 7.59 13-2.05 1.197-5.379-9.215v13.513c0 2.72 1.038 5.332 2.893 7.309l.236.244 13.048 13.048c2.361 2.36 3.724 5.532 3.819 8.86l.005.37V91h-2.374v-2.084c0-2.72-1.037-5.332-2.892-7.309l-.236-.244-13.048-13.048c-2.361-2.36-3.724-5.532-3.819-8.86l-.005-.37V45.572l-5.379 9.213-2.05-1.197 7.591-13L92 38.834z"
-										      transform="translate(-1091 -1190) translate(0 900) translate(950 290) translate(141)"/>
-										<path stroke="#009" stroke-width="2.374"
-										      d="M102 33L102 12 38 12 18 32 18 116 102 116 102 95"
-										      transform="translate(-1091 -1190) translate(0 900) translate(950 290) translate(141)"/>
-									</g>
-								</g>
-							</g>
-						</g>
-					</g>
-				</svg>
-				
-				<h3>Easy and flexible</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-					et dolore magna.</p>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="advertise bg-light">
-	<div class="container">
-		<h2>Why advertise on Expedia Group?</h2>
-		<div class="advertise-articles">
-			<div class="advertise-article">
-				<a href="#" class="advertise-link">
-					<div class="advertise-article__picture">
-						<img src="img/advertise--second/enterprise.jpg">
-					</div>
-				</a>
-				<div class="advertise-article__content">
-					<h3>Are you a small/medium enterprise?</h3>
-					<p>Spend efficiently by advertising directly on dubizzle to drive more traffic, get more sales, or
-						achieve higher awareness for your brand.</p>
-					<a href="#" class="get-started">Get started ></a>
-				</div>
-			</div>
-			<div class="advertise-article">
-				<a href="#" class="advertise-link">
-					<div class="advertise-article__picture">
-						<img src="img/advertise--second/media.jpg">
-					</div>
-				</a>
-				<div class="advertise-article__content">
-					<h3>Are you a small/medium enterprise?</h3>
-					<p>Spend efficiently by advertising directly on dubizzle to drive more traffic, get more sales, or
-						achieve higher awareness for your brand.</p>
-					<a href="#" class="get-started">Get started ></a>
-				</div>
-			</div>
-			<div class="advertise-article">
-				<a href="#" class="advertise-link">
-					<div class="advertise-article__picture">
-						<img src="img/advertise--second/seller.jpg">
-					</div>
-				</a>
-				<div class="advertise-article__content">
-					<h3>Are you a small/medium enterprise?</h3>
-					<p>Spend efficiently by advertising directly on dubizzle to drive more traffic, get more sales, or
-						achieve higher awareness for your brand.</p>
-					<a href="#" class="get-started">Get started ></a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="campaign">
-	<div class="container">
-		<h2>Launch your campaign in 5 simple steps</h2>
-		<div class="campaign-info">
-			<div class="campaign-picture">
-				<div data-content="1"></div>
-				<img src="img/campaign/laptop.png" alt="" class="campaign-image active ad-type">
-				<img src="img/campaign/chart.jpg" alt="" class="campaign-image ad-budget">
-				<img src="img/campaign/audience.jpg" alt="" class="campaign-image ad-audience">
-				<img src="img/campaign/creative.jpg" alt="" class="campaign-image ad-creative">
-				<img src="img/campaign/payment.jpg" alt="" class="campaign-image ad-payment">
-			</div>
-			<div class="campaign-tabs">
-				<div class="campaign-tab active" data-list="ad-type">
-					<div class="campaign-tab__icon">
-						<span>1</span>
-					</div>
-					<div class="campaign-tabs__text">
-						<h3>Choose your ad type</h3>
-						<p>This could be a banner ad or a video ad</p>
-					</div>
-				</div>
-				<div class="campaign-tab" data-list="ad-budget">
-					<div class="campaign-tab__icon">
-						<span>2</span>
-					</div>
-					<div class="campaign-tabs__text">
-						<h3>Set your budget</h3>
-					</div>
-				</div>
-				<div class="campaign-tab" data-list="ad-audience">
-					<div class="campaign-tab__icon">
-						<span>3</span>
-					</div>
-					<div class="campaign-tabs__text">
-						<h3>Target your audience</h3>
-					</div>
-				</div>
-				<div class="campaign-tab" data-list="ad-creative">
-					<div class="campaign-tab__icon">
-						<span>4</span>
-					</div>
-					<div class="campaign-tabs__text">
-						<h3>Upload your creative</h3>
-					</div>
-				</div>
-				<div class="campaign-tab" data-list="ad-payment">
-					<div class="campaign-tab__icon">
-						<span>5</span>
-					</div>
-					<div class="campaign-tabs__text">
-						<h3>Make payment and launch</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="campaigns-control">
-	<div class="container">
-		<h2>Manage your campaigns with full control</h2>
-		<div class="campaigns-control__items">
-			<div class="campaigns-control__item">
-				<img src="img/campaigns-control/ico-adjust.svg" alt="" class="campaigns-control-icon">
-				<h3>Easy adjustment</h3>
-				<p>See live data of your campaign performance, and optimize your targeting, update creative or pause
-					campaigns as you see fit</p>
-			</div>
-			<div class="campaigns-control__item">
-				<img src="img/campaigns-control/ico-email.svg" alt="" class="campaigns-control-icon">
-				<h3>Automated reporting</h3>
-				<p>Set up email reports and get daily or monthly updates sent to your email</p>
-			</div>
-			<div class="campaigns-control__item">
-				<img src="img/campaigns-control/ico-testing.svg" alt="" class="campaigns-control-icon">
-				<h3>Testing for success</h3>
-				<p>Try out different creatives and targeting strategies, and shift budget to the strongest
-					performers</p>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="travel-platform bg-dark">
-	<div class="travel-platform-wrapper">
-		<div class="container">
-			<div class="travel-platform-info">
-				<div class="travel-palatform-text">
-					<h2>The world’s travel platform</h2>
-					<p>An extensive brand portfolio that includes some of the world’s most trusted online travel
-						brands.</p>
-					<button class="btn--large btn-secondary btn">Get started</button>
-				</div>
-			</div>
-		</div>
-		<div class="travel-picture">
-			<img src="img/travel-platform/devices.png" alt="">
-		</div>
-	</div>
-</section>
-<footer class="footer">
-	<div class="container">
-		<div class="footer-content">
-			<div class="footer-credits">
-				<img src="img/footer/logo-footer.svg" alt="" class="footer-logo">
-				<p>This self-service platform is Powered by DanAds
-					© 2020 Expedia Group. All Rights Reserved.</p>
-			</div>
-			<div class="footer-nav">
-				<ul>
-					<li><a href="#">Terms and Conditions</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">Cookie Policy</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/script.js"></script>
-<script src="js/slider.js"></script>
+<script src="js/script.js" defer></script>
+<script
+	src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+	integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+	crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
