@@ -1,4 +1,32 @@
 /*==== Fonts ====*/
+@font-face {
+  font-family: 'Satoshi';
+  src: url("../fonts/Satoshi-Light.woff2") format("woff2"), url("../fonts/Satoshi-Light.woff") format("woff"), url("../fonts/Satoshi-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2"), url("../fonts/Satoshi-Regular.woff") format("woff"), url("../fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2"), url("../fonts/Satoshi-Medium.woff") format("woff"), url("../fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"), url("../fonts/Satoshi-Bold.woff") format("woff"), url("../fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal; }
+
 /*==== Fonts sizes ====*/
 /*==== Colors ====*/
 /*==== Breakpoints ====*/
@@ -319,11 +347,7 @@ template {
 .header {
   position: fixed;
   width: 100%;
-  z-index: 99;
-  background-color: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
-  transition: background-color .25s ease,transform .25s ease,border-color .25s ease; }
+  z-index: 99; }
   .header h1 {
     color: #fff; }
 
@@ -441,6 +465,9 @@ template {
 
 * {
   box-sizing: border-box; }
+
+html {
+  font-family: Satoshi, sans-serif; }
 
 img {
   width: 100%;

@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: $primary-font-family;
+}
+
 img {
   width: 100%;
   height: auto;
