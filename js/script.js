@@ -11,13 +11,23 @@ window.addEventListener('load', function() {
         headerMenu.classList.remove('active');
     });
 
-    $('.banner').slick({
+/*    $('.banner__items').slick({
         infinite: true,
-        slidesToShow: 1,
+        slidesToShow: 3,
         arrows: false,
         slidesToScroll: 1,
         dots: false,
         autoplay: true,
+        centerMode: true,
         autoplaySpeed: 4000
+    });*/
+
+    $('.banner__items').flickity({
+        cellAlign: 'center',
+        freeScroll: true,
+        wrapAround: true,
+        fullscreen: true,
+        autoPlay: 3000,
+        pauseAutoPlayOnHover: false
     });
 });
