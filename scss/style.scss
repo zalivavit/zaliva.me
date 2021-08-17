@@ -12,6 +12,12 @@ html {
   font-family: $primary-font-family;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 img {
   width: 100%;
   height: auto;
