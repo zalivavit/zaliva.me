@@ -11,3 +11,5 @@ window.addEventListener('load', function () {
         headerMenu.classList.remove('active');
     });
 });
+
+new Swiper('.home-banner__wrapper');

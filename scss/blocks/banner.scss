@@ -27,15 +27,6 @@
 .home-banner {
 
   &__wrapper {
-    width: 400px;
-    height: 400px;
-    position: relative;
-    margin: 0 auto;
-
-    @media screen and (max-width: $mobile) {
-      width: 100%;
-    }
-
     img {
       position: absolute;
       object-fit: cover;
@@ -43,4 +34,10 @@
       height: 100%;
     }
   }
+}
+
+.home-banner__item {
+  width: 100%;
+  position: relative;
+  padding-bottom: 50%;
 }

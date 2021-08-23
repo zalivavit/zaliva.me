@@ -356,19 +356,16 @@ template {
     .home .container {
       padding: 0; } }
 
-.home-banner__wrapper {
-  width: 400px;
-  height: 400px;
+.home-banner__wrapper img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+.home-banner__item {
+  width: 100%;
   position: relative;
-  margin: 0 auto; }
-  @media screen and (max-width: 480px) {
-    .home-banner__wrapper {
-      width: 100%; } }
-  .home-banner__wrapper img {
-    position: absolute;
-    object-fit: cover;
-    width: 100%;
-    height: 100%; }
+  padding-bottom: 45%; }
 
 .main-footer__wrapper {
   display: flex;
@@ -426,8 +423,7 @@ template {
   .header__nav-list {
     align-items: center;
     transition: opacity ease-in-out .2s;
-    display: flex;
-    margin-right: 40px; }
+    display: flex; }
     @media screen and (max-width: 768px) {
       .header__nav-list {
         flex-direction: column;
