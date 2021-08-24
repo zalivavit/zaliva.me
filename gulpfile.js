@@ -8,6 +8,7 @@ const imagemin = require('gulp-imagemin');
 const cleanCSS = require('gulp-clean-css');
 const sassGlob = require('gulp-sass-glob');
 const minify = require('gulp-minify');
+const critical = require('critical');
 
 // SCSS
 
@@ -38,6 +39,20 @@ gulp.task('scss-watch', function(callback) {
     callback();
 });
 
+gulp.task('critical', function (cb) {
+    critical.generate({
+        inline: true,
+        base: './',
+        src: 'index.html',
+        target: {
+            html: './index.html',
+            css: 'css/cr.css',
+        },
+        width: 1300,
+        height: 900,
+    });
+});
+
 // Image minifier
 
 gulp.task('imagemin', function(callback) {
@@ -65,4 +80,4 @@ gulp.task('watch', function() {
 
 // Default
 
-gulp.task('default', gulp.parallel('server', 'watch', 'scss-build'));
+gulp.task('default', gulp.parallel('server', 'watch', 'scss-build', 'critical'));
