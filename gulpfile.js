@@ -80,4 +80,4 @@ gulp.task('watch', function() {
 
 // Default
 
-gulp.task('default', gulp.parallel('server', 'watch', 'scss-build', 'critical'));
+gulp.task('default', gulp.parallel('server', 'watch', 'scss-build'));
