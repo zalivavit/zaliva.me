@@ -41,21 +41,15 @@ gulp.task('scss-watch', function(callback) {
 
 gulp.task('critical', function (cb) {
     critical.generate({
+        inline: true,
         base: './',
         src: 'index.html',
         target: {
+            html: 'index.html',
             css: 'css/cr.css',
         },
-        dimensions: [
-            {
-                height: 200,
-                width: 500,
-            },
-            {
-                height: 900,
-                width: 1200,
-            },
-        ],
+        width: 1300,
+        height: 900,
     });
 });
 
@@ -86,4 +80,4 @@ gulp.task('watch', function() {
 
 // Default
 
-gulp.task('default', gulp.parallel('server', 'watch', 'scss-build'));
+gulp.task('default', gulp.parallel('server', 'watch', 'scss-build', 'critical'));
