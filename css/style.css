@@ -398,7 +398,8 @@ template {
         opacity: 1;
         transform: translateX(0); } }
   .header__nav a {
-    color: #000; }
+    color: #000;
+    font-weight: 500; }
     @media screen and (max-width: 768px) {
       .header__nav a {
         font-size: 30px;
@@ -452,13 +453,15 @@ template {
   .header__nav-btn {
     width: 14px;
     height: 14px;
-    background: url("./../img/header/close-btn.svg") no-repeat center/cover;
     position: absolute;
     top: 30px;
     right: 30px; }
     @media screen and (min-width: 769px) {
       .header__nav-btn {
         display: none; } }
+    .header__nav-btn svg {
+      width: 14px;
+      height: 14px; }
 
 .header__toggle-btn {
   width: 40px;
@@ -475,11 +478,11 @@ template {
     background-color: #000;
     display: block; }
     .header__toggle-btn span:nth-child(1) {
-      width: 70%; }
+      width: 25px; }
     .header__toggle-btn span:nth-child(2) {
-      width: 50%; }
+      width: 15px; }
     .header__toggle-btn span:nth-child(3) {
-      width: 90%; }
+      width: 30px; }
 
 .home {
   margin: auto 0;
