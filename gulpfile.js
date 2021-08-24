@@ -7,6 +7,7 @@ const gcmq = require('gulp-group-css-media-queries');
 const imagemin = require('gulp-imagemin');
 const cleanCSS = require('gulp-clean-css');
 const sassGlob = require('gulp-sass-glob');
+const minify = require('gulp-minify');
 
 // SCSS
 
@@ -21,7 +22,8 @@ gulp.task('scss-build', function(callback) {
         .pipe(prefix('last 4 versions'))
         .pipe(gcmq())
         .pipe(cleanCSS())
-        .pipe( gulp.dest('./build/css/') )
+        .pipe(minify())
+        .pipe( gulp.dest('./css/') )
 
     callback();
 });
@@ -30,19 +32,10 @@ gulp.task('scss-watch', function(callback) {
     return gulp.src('./scss/style.scss')
         .pipe(sassGlob())
         .pipe( sass() )
+        .pipe(minify())
         .pipe( gulp.dest('./css/'))
 
     callback();
-});
-
-// Build tasks
-
-gulp.task('html', function() {
-    return gulp.src('./src/index.html').pipe(gulp.dest('./build/'));
-});
-
-gulp.task('js', function() {
-    return gulp.src('./js/**/*.js').pipe(gulp.dest('./build/js/'));
 });
 
 // Image minifier
@@ -50,7 +43,7 @@ gulp.task('js', function() {
 gulp.task('imagemin', function(callback) {
     gulp.src('./src/img/**/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('./build/img/'))
+        .pipe(gulp.dest('./src/img/**/*'))
 });
 
 // Task server
@@ -72,5 +65,4 @@ gulp.task('watch', function() {
 
 // Default
 
-gulp.task('default', gulp.parallel('server', 'watch'));
-gulp.task('build', gulp.parallel('html', 'scss-build', 'js', 'imagemin'));
+gulp.task('default', gulp.parallel('server', 'watch', 'scss-build'));
