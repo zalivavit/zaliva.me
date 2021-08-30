@@ -1,4 +1,4 @@
-/*==== Fonts ====*/
+/*!*==== Fonts ====*!
 
 @font-face {
   font-family: 'Satoshi';
@@ -38,13 +38,14 @@
   font-weight: 700;
   font-display: swap;
   font-style: normal;
-}
+}*/
 
-$primary-font-family: Satoshi, sans-serif;
+$primary-font-family: 'Public Sans', sans-serif;
 
 /*==== Fonts sizes ====*/
 
-$header-nav-mobile-ft: 30px;
+$base-font-size: 10px;
+
 /*==== Colors ====*/
 
 $white: #fff;

@@ -1,5 +1,7 @@
 @charset "utf-8";
-@import './variables/variables.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'functions.scss';
 @import './normalize/normalize.scss';
 @import "./blocks/**/*.scss";
 
@@ -10,6 +12,7 @@
 
 html {
   font-family: $primary-font-family;
+  font-size: $base-font-size;
 }
 
 body {
@@ -44,4 +47,28 @@ button {
 ul {
   padding: 0;
   margin: 0;
+}
+
+h1 {
+  @include responsive-font(40, 90);
+}
+
+h2 {
+  @include responsive-font(32, 62);
+}
+
+h3 {
+  @include responsive-font(28, 44);
+}
+
+h3 {
+  @include responsive-font(24, 36);
+}
+
+h4 {
+  @include responsive-font(22, 32);
+}
+
+h4 {
+  @include responsive-font(20, 28);
 }

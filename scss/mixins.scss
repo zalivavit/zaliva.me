@@ -1,0 +1,7 @@
+@mixin responsive-font($min-size, $max-size) {
+    font-size: font-size($min-size, $max-size);
+  
+    @media all and (min-width: 1441px) {
+      font-size: $max-size + px;
+    }
+  }

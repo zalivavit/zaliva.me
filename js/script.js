@@ -16,7 +16,8 @@ new Swiper('.home-banner__wrapper', {
     loop: true,
     effect: "fade",
     autoplay: {
-        delay: 4000,
+        delay: 5000,
         disableOnInteraction: false
-    }
+    },
+    speed: 3000
 });

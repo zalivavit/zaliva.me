@@ -1,0 +1,3 @@
+@function font-size($min-size, $max-size) {
+    @return calc(#{$min-size}px + (#{$max-size} - #{$min-size}) * ((100vw - 320px) / (1440 - 320)));
+  }
