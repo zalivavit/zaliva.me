@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: cms/integration
+media_folder: "public/img/works"
+public_folder: "/img/works"
+collection:
+  - name: "works"
+    label: "Works"
+    folder: "src/works"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    field:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Year", name: "year", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["work"] }
