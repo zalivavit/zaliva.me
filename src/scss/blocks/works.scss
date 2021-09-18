@@ -1,0 +1,47 @@
+.works {
+    &__image {
+        position: relative;
+        width: 100%;
+        max-width: 900px;
+        padding-bottom: 35%;
+        margin-right: 4rem;
+
+        img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            object-fit: cover;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+    
+        &:not(:last-child) {
+            margin-bottom: 4rem;
+        }
+    
+        h3 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        } 
+    }
+
+    &__content {
+        max-width: 400px;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            @include responsive-font(10, 12);
+        }
+    }
+}

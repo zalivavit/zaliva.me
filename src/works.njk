@@ -1,0 +1,31 @@
+---
+
+title: 'Blog'
+layout: 'base.njk'
+
+---
+<div class="works content">
+    <div class="container">
+        <div class="works__items">
+            {% for work in collections.work %}
+            <div class="works__item">
+                    <div class="works__image">
+                        <img src="{{ work.data.image }}" alt="{{ work.data.title }}">
+                    </div>
+                    <div class="works__content">
+                        <div class="works__title">
+                            <h3>{{ work.data.title }}</h3>
+                            <span>
+                                {{ work.data.year }}
+                            </span>
+                        </div>
+                        <div class="works__description">
+                            <p>{{ work.data.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

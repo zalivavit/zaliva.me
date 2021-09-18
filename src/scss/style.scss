@@ -13,6 +13,10 @@
 html {
   font-family: $primary-font-family;
   font-size: $base-font-size;
+
+  @media screen and (max-width: $tablet) {
+    font-size: $base-font-size-mobile;
+  }
 }
 
 body {
@@ -27,9 +31,13 @@ img {
 }
 
 .container {
-  max-width: 1380px;
+  max-width: 1580px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.content {
+  padding: 15rem 0 10rem;
 }
 
 a {
@@ -47,6 +55,10 @@ button {
 ul {
   padding: 0;
   margin: 0;
+}
+
+p {
+  @include responsive-font(14, 16);
 }
 
 h1 {

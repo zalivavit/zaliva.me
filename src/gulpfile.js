@@ -60,10 +60,10 @@ gulp.task('server', function() {
 // Watch
 
 gulp.task('watch', function() {
-     watch(['./*.html', './**/*.css'], gulp.parallel( browserSync.reload ));
+     watch(['./*.njk', './**/*.css'], gulp.parallel( browserSync.reload ));
      watch('./**/*scss', gulp.parallel('scss-watch'));
 });
 
 // Default
 
-gulp.task('default', gulp.parallel('server', 'watch', 'scss-build'));
+gulp.task('default', gulp.parallel('watch', 'scss-build'));
