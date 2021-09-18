@@ -3,7 +3,7 @@ backend:
   branch: cms/integration
 media_folder: "public/img/works"
 public_folder: "/img/works"
-collection:
+collections:
   - name: "works"
     label: "Works"
     folder: "src/works"
