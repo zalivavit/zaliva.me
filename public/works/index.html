@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <title>Blog</title>
 </head>
 <body>
@@ -54,7 +55,7 @@
             
             <div class="works__item">
                     <div class="works__image">
-                        <img src="/img/test-works/first.jpg" alt="First work">
+                        <img src="/img/works/first.jpg" alt="First work">
                     </div>
                     <div class="works__content">
                         <div class="works__title">
@@ -71,7 +72,7 @@
             
             <div class="works__item">
                     <div class="works__image">
-                        <img src="/img/test-works/second.jpg" alt="Second work">
+                        <img src="/img/works/second.jpg" alt="Second work">
                     </div>
                     <div class="works__content">
                         <div class="works__title">
@@ -88,7 +89,7 @@
             
             <div class="works__item">
                     <div class="works__image">
-                        <img src="/img/test-works/third.jpg" alt="Third work">
+                        <img src="/img/works/third.jpg" alt="Third work">
                     </div>
                     <div class="works__content">
                         <div class="works__title">
@@ -105,7 +106,7 @@
             
             <div class="works__item">
                     <div class="works__image">
-                        <img src="/img/test-works/fourth.jpg" alt="Fourth work">
+                        <img src="/img/works/fourth.jpg" alt="Fourth work">
                     </div>
                     <div class="works__content">
                         <div class="works__title">
@@ -122,7 +123,7 @@
             
             <div class="works__item">
                     <div class="works__image">
-                        <img src="/img/test-works/third.jpg" alt="Fifth work">
+                        <img src="/img/works/third.jpg" alt="Fifth work">
                     </div>
                     <div class="works__content">
                         <div class="works__title">
@@ -154,5 +155,17 @@
 </footer>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>
