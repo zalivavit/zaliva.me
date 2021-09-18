@@ -9,7 +9,7 @@ collections:
     folder: "src/works"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    field:
+    fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
