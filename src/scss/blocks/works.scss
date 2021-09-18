@@ -2,9 +2,15 @@
     &__image {
         position: relative;
         width: 100%;
-        max-width: 900px;
-        padding-bottom: 35%;
-        margin-right: 4rem;
+        padding-bottom: 80%;
+        margin-bottom: 5rem;
+
+        @media screen and (min-width: $tablet) {
+            width: 60%;
+            margin-right: 4rem;
+            margin-bottom: 0;
+            padding-bottom: 35%;
+        }
 
         img {
             position: absolute;
@@ -21,9 +27,18 @@
     &__item {
         display: flex;
         align-items: flex-start;
+        flex-direction: column;
+
+        @media screen and (min-width: $tablet) {
+            flex-direction: row;
+        }
     
         &:not(:last-child) {
-            margin-bottom: 4rem;
+            margin-bottom: 10rem;
+
+            @media screen and (min-width: $tablet) {
+                margin-bottom: 4rem;
+            }
         }
     
         h3 {
@@ -33,7 +48,11 @@
     }
 
     &__content {
-        max-width: 400px;
+        width: 100%;
+
+        @media screen and (min-width: $tablet) {
+            width: 40%;
+        }
     }
 
     &__title {

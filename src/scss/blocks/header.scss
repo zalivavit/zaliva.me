@@ -1,5 +1,6 @@
 .main-header {
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   z-index: 99;
   background-color: $white;
@@ -156,6 +157,10 @@
 .header__logo {
   h1 {
     margin: 0;
+  }
+
+  a {
+    color: $black;
   }
 }
 
